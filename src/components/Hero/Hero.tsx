@@ -24,7 +24,7 @@ const Hero = () => {
         </h1>
 
       
-        <p className="text-[15px] font-normal leading-relaxed text-[#262626] max-w-2xl mb-10">
+        <p className="text-[15px] font-medium leading-relaxed text-[#262626] max-w-2xl mb-10">
           I help early-stage founders turn rough concepts into clear, usable digital products.
           <br className="hidden sm:block" />
           From structure and flows to polished UI, every decision is made with real users in mind.
