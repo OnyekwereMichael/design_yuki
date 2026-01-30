@@ -1,4 +1,3 @@
-import React from "react";
 import { icons, images } from "../../constants";
 
 export default function About() {
