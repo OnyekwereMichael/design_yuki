@@ -8,7 +8,7 @@ import project7 from '../assets/project7.png'
 import aboutImg from '../assets/about_img.png'
 
 
-import arrowLeft from '../assets/icons/arrow-left.png'
+import arrowLeft from '../assets/icons/arrow-left.svg'
 import sparkles from '../assets/icons/sparkles.png'
 export const icons = {
     arrowLeft,

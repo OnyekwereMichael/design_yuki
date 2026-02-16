@@ -7,7 +7,7 @@ import RecentWorks from './components/RecentWorks/RecentWorks';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#F8F8F8] to-[#22222222]">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#F8F8F8] to-[#22222222] ">
       <Navbar />
       <main className="flex-1 flex flex-col">
         <Hero />
