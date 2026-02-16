@@ -99,12 +99,12 @@ const ProjectSlider = () => {
             className="flex-shrink-0 w-[761px] group"
           >
             {/* Project Card */}
-            <div className="relative overflow-hidden rounded-tl-2xl rounded-tr-2xl  hover:shadow-xl transition-shadow duration-300">
+            <div className="relative overflow-hidden rounded-tl-4xl rounded-tr-4xl  hover:shadow-xl transition-shadow duration-300">
               <div className=" overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="2xl:w-[914.06px] 2xl:h-[515.43px] xl:w-[761.28px] xl:h-[429.28px] object-cover scale-105 group-hover:scale-105 transition-transform duration-500"
                   draggable="false"
                 />
               </div>
