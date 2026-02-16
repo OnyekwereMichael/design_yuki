@@ -15,7 +15,6 @@ const WorkCard: React.FC<WorkCardProps> = ({
   title, 
   category, 
   layout = 'landscape', 
-  bgColor = 'bg-white', 
   children 
 }) => {
   return (
