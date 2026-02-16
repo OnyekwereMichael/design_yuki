@@ -36,7 +36,7 @@ export default function About() {
             <img
               src={images.aboutImg}
               alt="Design workspace"
-              className="2xl:w-[412px] 2xl:h-[457px] xl:w-[393px] xl:h-[390px] object-cover grayscale"
+              className="w-full object-cover grayscale"
             />
           </div>
 
