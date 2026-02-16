@@ -75,7 +75,7 @@ const ProjectSlider = () => {
   };
 
   return (
-    <section className=" bg-[#F8F8F8] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden">
+    <section className=" bg-[#F8F8F8] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden mt-6">
 
       {/* Slider Container */}
       <div 
@@ -99,7 +99,7 @@ const ProjectSlider = () => {
             className="flex-shrink-0 w-[761px] group"
           >
             {/* Project Card */}
-            <div className="relative overflow-hidden rounded-tl-2xl rounded-tr-2xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="relative overflow-hidden rounded-tl-2xl rounded-tr-2xl  hover:shadow-xl transition-shadow duration-300">
               <div className=" overflow-hidden">
                 <img 
                   src={project.image} 
