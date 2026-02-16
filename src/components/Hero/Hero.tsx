@@ -3,8 +3,8 @@ import { icons } from '../../constants';
 
 const Hero = () => {
   return (
-    <section className=" flex items-center justify-center pt-32 2xl:pt-[170px] 2xl:mt-16">
-      
+    <section className=" flex items-center justify-center pt-32 2xl:pt-[170px] 2xl:mt-32">
+
       <div className=" mx-auto text-center flex flex-col items-center">
         {/* Profile Image */}
         <div className="2xl:mb-3">
