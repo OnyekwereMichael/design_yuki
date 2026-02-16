@@ -75,7 +75,7 @@ const ProjectSlider = () => {
   };
 
   return (
-    <section className=" bg-[#F8F8F8] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden mt-6">
+    <section className=" bg-[#F8F8F8] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden mt-10 2xl:mt-16">
 
       {/* Slider Container */}
       <div 
