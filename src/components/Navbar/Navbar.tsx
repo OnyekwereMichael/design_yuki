@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 py-6">
+    <nav className="fixed top-0 left-0 right-0 z-50 py-[56px]">
       <div className=" xl:max-w-[1240px] 2xl:max-w-[1628px] mx-auto  flex justify-between items-center">
         <a 
           href="/" 
