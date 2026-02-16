@@ -39,7 +39,7 @@ text-white rounded-full  transition-all duration-300 "
           >
             <span className="text-[14px] font-bold tracking-wide">Start a project</span>
             <span className="flex items-center justify-center w-10 h-10 bg-[#FFFFFF33] shadow-md rounded-full group-hover:bg-[#5a5a5a] transition-colors duration-200">
-              <img src={icons.arrowLeft} alt="arrow left" />
+              <img src={icons.arrowLeft} alt="arrow left" className='2xl:w-[116px] 2xl:h-[122.15px] w-[102.56px] h-[108px]'/>
             
             </span>
           </a>
