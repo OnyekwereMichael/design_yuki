@@ -25,14 +25,14 @@ const Hero = () => {
         </h1>
 
 
-        <p className="2xl:text-[16px] text-[15px] font-[400] leading-relaxed text-[#262626] max-w-2xl mb-10">
+        <p className="2xl:text-[16px] text-[15px] font-[400] leading-relaxed text-[#262626] max-w-2xl mb-5">
           I help early-stage founders turn rough concepts into clear, usable digital products.
           <br className="hidden sm:block" />
           From structure and flows to polished UI, every decision is made with real users in mind.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex items-center gap-3 flex-wrap justify-center">
+        <div className="flex items-center gap-1.5 flex-wrap justify-center">
           <a
             href="#contact"
             className="group inline-flex items-center justify-center gap-3 w-[165px] h-[56px] px-1  bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)]
