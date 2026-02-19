@@ -38,7 +38,7 @@ const Hero = () => {
             className="group inline-flex items-center justify-center gap-3 w-[165px] h-[64px] px-1  bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)]
 text-white rounded-full  transition-all duration-300 border-[1px] border-[#616161]"
           >
-           <div className="text-[14px] font-bold tracking-wide flex items-center justify-center h-full text-center">
+           <div className="text-[15px] font-bold tracking-wide flex items-center justify-center h-full text-center">
   Start a project
 </div>
 
