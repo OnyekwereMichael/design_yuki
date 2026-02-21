@@ -31,26 +31,29 @@ const Hero = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex items-center gap-1.5 flex-wrap justify-center">
+        <div className="flex items-center gap-1.5 flex-wrap justify-center ">
+          <button className=' '>
           <a
             href="#contact"
-            className="group inline-flex items-center justify-center gap-2 2xl:w-[170px] xl:w-[165px] h-[64px]   bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)]
-text-white rounded-full  transition-all duration-300 border-[1px] border-[#616161]"
+            className="group border-[1px] border-[#616161] inline-flex items-center justify-center gap-2 2xl:w-[171px] xl:w-[165px] h-[64px] bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)]  shadow-2xl shadow-black/40
+  
+text-white rounded-[46px] mx-1  transition-all duration-300"
           >
            <div className="2xl:text-[16px] text-[15px] font-bold tracking-wide flex items-center justify-center h-full text-center ml-1">
   Start a project
 </div>
 
-            <div className="flex items-center justify-center w-10 h-10 bg-[#FFFFFF33] shadow-md rounded-full group-hover:bg-[#5a5a5a] transition-colors duration-200">
+            <div className="flex items-center justify-center w-10 h-10 bg-[#FFFFFF33] shadow-md rounded-full group-hover:bg-[#5a5a5a] transition-colors duration-200 ">
               <img src={icons.arrowLeft} alt="arrow left" />
 
             </div>
           </a>
+          </button>
 
 
           <a
             href="#work"
-            className="inline-flex items-center justify-center w-[139px] h-[56px]  2xl:text-[16px] xl:text-[15px] font-medium bg-white text-[#262626] rounded-full transition-all duration-200"
+            className="inline-flex items-center justify-center 2x:w-[160px] h-[64px] xl:w-[154px] xl:h-[56px] px-2  2xl:text-[16px] xl:text-[15px] font-medium bg-white text-[#262626] rounded-full transition-all duration-200"
           >
             View selected work
           </a>

@@ -10,13 +10,14 @@ import project9 from '../assets/project9.png'
 import project10 from '../assets/project10.png'
 import project11 from '../assets/project11.png'
 import project12 from '../assets/project12.png'
+import project13 from '../assets/project13.png'
 import aboutImg from '../assets/about_img.png'
 import underControl from '../assets/underControl.png'
 
 
 import arrowLeft from '../assets/icons/arrow-left.svg'
 import arrowRight from '../assets/icons/arrow-right.svg'
-import sparkles from '../assets/icons/sparkles.png'
+import sparkles from '../assets/icons/sparkles.svg'
 import rocket from '../assets/icons/rocket.svg'
 import phone from '../assets/icons/phone.svg'
 import cursor from '../assets/icons/cursor-rectangle.svg'
@@ -44,6 +45,7 @@ export const images = {
   project10,
   project11,
   project12,
+  project13,
   aboutImg,
   underControl
 

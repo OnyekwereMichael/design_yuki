@@ -75,12 +75,12 @@ const ProjectSlider = () => {
   };
 
   return (
-    <section className=" bg-[#F8F8F8] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden mt-10 2xl:mt-20">
+    <section className=" bg-[#F8F8F8] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden mt-14 2xl:mt-14 ">
 
       {/* Slider Container */}
       <div 
         ref={sliderRef}
-        className="flex gap-2 overflow-x-hidden cursor-grab active:cursor-grabbing select-none px-8 pt-8"
+        className="flex gap-6 overflow-x-hidden cursor-grab active:cursor-grabbing select-none px-8 pt-8"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => {
           setIsPaused(false);

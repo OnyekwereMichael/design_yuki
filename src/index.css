@@ -71,7 +71,7 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: #F8F8F8;
+  /* background-color: linear-gradient(180deg, #F8F8F8 0%, #22222222 100%); */
 }
 
 /* Pulse animation for spots indicator */
