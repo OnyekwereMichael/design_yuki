@@ -4,7 +4,8 @@ import WorkCard from './WorkCard';
 
 const RecentWorks = () => {
   return (
-    <section id="work" className="px-6 lg:px-20 bg-gradient-to-b from-[#F8F8F8] to-[#22222222] pb-8  py-6 mx-auto">
+    <section id="work" className=" lg:px-20 bg-gradient-to-b from-[#F8F8F8] to-[#22222222] pb-8  py-6 mx-auto ">
+      <div className='xl:max-w-[1240px] 2xl:max-w-screen  '>
       <h2 className="text-[32px] font-medium text-[#262626] my-12 tracking-tight">My Recent Works</h2>
       
       <div className="flex flex-col md:flex-row gap-8 lg:gap-8">
@@ -77,6 +78,7 @@ const RecentWorks = () => {
             />
             </div>
        
+      </div>
       </div>
     </section>
   );

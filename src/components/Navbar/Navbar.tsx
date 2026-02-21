@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 2xl:py-[56px] xl:py-[40px]">
-      <div className=" xl:max-w-[1240px] 2xl:max-w-[1628px] mx-auto  flex justify-between items-center relative px-6 xl:px-0">
+      <div className=" xl:max-w-[1240px] 2xl:max-w-[1638px] mx-auto  flex justify-between items-center relative px-6 xl:px-0">
         <a 
           href="/" 
           className="inline-flex items-center px-5 py-3 bg-gradient-to-b from-[#575757] to-[#262626] text-white text-[15px] font-bold rounded-full hover:bg-[#2a2a2a] transition-all duration-200 tracking-wide hover:-translate-y-0.5 h-[48px]"

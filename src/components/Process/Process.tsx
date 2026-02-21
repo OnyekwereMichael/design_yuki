@@ -3,10 +3,11 @@ import { icons, images } from '../../constants';
 
 const Process = () => {
   return (
-    <section className="px-6 lg:px-20 bg-white py-24 mx-auto flex flex-col gap-32">
+    <section className="px-6 lg:px-20 bg-white py-24 mx-auto flex flex-col gap-32 ">
+      <div className='xl:max-w-[1240px] 2xl:max-w-screen  '>
       
       {/* Header Badge */}
-      <div className="flex justify-center items-center mb-[-109px]">
+      <div className="flex justify-center items-center ">
         <div className="bg-gradient-to-b from-[#575757] to-[#262626] text-white 2xl:w-[252px] 2xl:h-[48px] xl:w-[246px] xl:h-[48px] rounded-[25px] flex items-center justify-center gap-1.5 p-[10px] text-sm font-medium ">
             <div>
                <img src={icons.workCase} alt=""  />
@@ -16,7 +17,7 @@ const Process = () => {
       </div>
 
       
-      <section>
+      <section className='mt-5'>
      <div className="flex flex-col items-center">
         <h2 className="2xl:text-[40px] xl:text-[32px] md:text-[48px] font-medium text-[#262626] text-center mb-12">
           From Idea To <span className="italic  font-serif font-normal">Usable Product</span>
@@ -94,7 +95,7 @@ const Process = () => {
       </div>
       </section>
      
-
+</div>
      
     </section>
   );

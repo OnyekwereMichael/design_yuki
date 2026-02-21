@@ -6,7 +6,6 @@ const Hero = () => {
     <section className=" flex items-center justify-center pt-32 2xl:pt-[170px] 2xl:mt-48">
 
       <div className=" mx-auto text-center flex flex-col items-center">
-        {/* Profile Image */}
         <div className="2xl:mb-3">
           <div className="w-[120px] h-[120px] rounded-xl overflow-hidden scale-[1.02]     hover:scale-[1.02] transition-transform duration-300">
             <img
@@ -35,10 +34,10 @@ const Hero = () => {
         <div className="flex items-center gap-1.5 flex-wrap justify-center">
           <a
             href="#contact"
-            className="group inline-flex items-center justify-center gap-3 w-[165px] h-[64px] px-1  bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)]
+            className="group inline-flex items-center justify-center gap-2 2xl:w-[170px] xl:w-[165px] h-[64px]   bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)]
 text-white rounded-full  transition-all duration-300 border-[1px] border-[#616161]"
           >
-           <div className="text-[15px] font-bold tracking-wide flex items-center justify-center h-full text-center">
+           <div className="2xl:text-[16px] text-[15px] font-bold tracking-wide flex items-center justify-center h-full text-center ml-1">
   Start a project
 </div>
 
@@ -51,7 +50,7 @@ text-white rounded-full  transition-all duration-300 border-[1px] border-[#61616
 
           <a
             href="#work"
-            className="inline-flex items-center justify-center w-[139px] h-[56px]  text-[15px] font-medium bg-white text-[#262626] rounded-full transition-all duration-200"
+            className="inline-flex items-center justify-center w-[139px] h-[56px]  2xl:text-[16px] xl:text-[15px] font-medium bg-white text-[#262626] rounded-full transition-all duration-200"
           >
             View selected work
           </a>

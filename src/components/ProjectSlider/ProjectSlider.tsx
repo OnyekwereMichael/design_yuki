@@ -80,7 +80,7 @@ const ProjectSlider = () => {
       {/* Slider Container */}
       <div 
         ref={sliderRef}
-        className="flex gap-6 overflow-x-hidden cursor-grab active:cursor-grabbing select-none px-8 pt-8"
+        className="flex gap-2 overflow-x-hidden cursor-grab active:cursor-grabbing select-none px-8 pt-8"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => {
           setIsPaused(false);
@@ -104,7 +104,7 @@ const ProjectSlider = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105  transition-transform duration-500"
+                  className="w-full h-full object-cover  transition-transform duration-500"
                   draggable="false"
                 />
               </div>
