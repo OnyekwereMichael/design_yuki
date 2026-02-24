@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { icons, images } from '../../constants';
+import { icons } from '../../constants';
 import profileImage from '../../assets/profile.jpg';
 
 interface FAQItem {
