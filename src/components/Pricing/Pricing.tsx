@@ -71,6 +71,7 @@ const Pricing: React.FC = () => {
             <div 
               key={index} 
               className="bg-white 2xl:rounded-[38px] xl:rounded-[32px] rounded-[25px] 2xl:px-10 2xl:py-8  xl:px-10 xl:py-8 flex flex-col lg:flex-row gap-5 lg:gap-12 items-stretch 2xl:h-[315px] xl:h-[320px]"
+              
             >
               {/* Left Side: Pricing Info */}
               <div className="flex-1 flex flex-col w-full lg:w-auto">
