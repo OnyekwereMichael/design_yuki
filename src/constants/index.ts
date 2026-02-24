@@ -13,6 +13,12 @@ import project12 from '../assets/project12.png'
 import project13 from '../assets/project13.png'
 import aboutImg from '../assets/about_img.png'
 import underControl from '../assets/underControl.png'
+import testimonialPicOne from '../assets/testimonial_one.jpg'
+import testimonialPicTwo from '../assets/testtimonial_two.jpg'
+import testimonialPicThree from '../assets/testimonial_three.jpg'
+import testimonialPicFour from '../assets/testimonial_four.jpg'
+import forward from '../assets/icons/forward.svg'
+import arrowRight02 from '../assets/icons/arrow-right-02.svg'
 
 
 import arrowLeft from '../assets/icons/arrow-left.svg'
@@ -22,6 +28,14 @@ import rocket from '../assets/icons/rocket.svg'
 import phone from '../assets/icons/phone.svg'
 import cursor from '../assets/icons/cursor-rectangle.svg'
 import workCase from '../assets/icons/workCase.svg'
+import artboardTool from '../assets/icons/artboard-tool.svg'
+import rocket01 from '../assets/icons/rocket-01 (1).svg'
+import webDesign from '../assets/icons/web-design-01.svg'
+import canvas from '../assets/icons/canvas.svg'
+import playIcon from '../assets/icons/play.svg'
+import twitterIcon from '../assets/icons/twitter.svg'
+import checkIcon from '../assets/icons/check.svg'
+import appointment from '../assets/icons/appointment-01.svg'
 export const icons = {
     arrowLeft,
     arrowRight,
@@ -29,7 +43,17 @@ export const icons = {
     rocket,
     phone,
     cursor,
-    workCase
+    workCase,
+    artboardTool,
+    rocket01,
+    webDesign,
+    canvas,
+    playIcon,
+    twitterIcon,
+    checkIcon,
+    forward,
+    arrowRight02,
+    appointment
   };
 
 export const images = {
@@ -47,6 +71,10 @@ export const images = {
   project12,
   project13,
   aboutImg,
-  underControl
+  underControl,
+  testimonialPicOne,
+  testimonialPicTwo,
+  testimonialPicThree,
+  testimonialPicFour
 
 };

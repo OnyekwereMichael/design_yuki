@@ -3,8 +3,8 @@ import { icons, images } from '../../constants';
 
 const Process = () => {
   return (
-    <section className="px-6 lg:px-20 bg-white py-24 mx-auto flex flex-col gap-32 ">
-      <div className='xl:max-w-[1240px] 2xl:max-w-screen  '>
+    <section className="bg-white pt-20 px-4 md:px-0 ">
+      <div className='section-container flex flex-col '>
       
       {/* Header Badge */}
       <div className="flex justify-center items-center ">

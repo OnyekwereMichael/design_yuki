@@ -2,8 +2,8 @@ import { icons, images } from "../../constants";
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-white  text-white  py-24 ">
-      <div className="mx-auto xl:max-w-[1240px] 2xl:max-w-[1628px]  grid grid-cols-1 lg:grid-cols-3 gap-28 items-start">
+    <section className="min-h-screen bg-white  text-white  pt-24 ">
+      <div className="section-container  grid grid-cols-1 lg:grid-cols-3 gap-28 items-start">
       
         <div className="space-y-8 col-span-2">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-b from-[#575757] to-[#262626] text-sm text-white h-[44px]">

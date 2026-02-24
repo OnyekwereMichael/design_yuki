@@ -4,6 +4,11 @@ import ProjectSlider from './components/ProjectSlider/ProjectSlider';
 import About from './components/About/About';
 import RecentWorks from './components/RecentWorks/RecentWorks';
 import Process from './components/Process/Process';
+import Testimonials from './components/Testimonials/Testimonials';
+import Services from './components/Services/Services';
+import Pricing from './components/Pricing/Pricing';
+import FAQ from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -16,6 +21,11 @@ function App() {
         <About />
         <RecentWorks />
         <Process />
+        <Services />
+        <Testimonials />
+        <Pricing />
+        <FAQ />
+        <Footer />
       </main>
     </div>
   );

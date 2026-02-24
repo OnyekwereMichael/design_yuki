@@ -3,9 +3,8 @@ import { icons } from '../../constants';
 
 const Hero = () => {
   return (
-    <section className=" flex items-center justify-center pt-32 2xl:pt-[170px] 2xl:mt-48">
-
-      <div className=" mx-auto text-center flex flex-col items-center">
+    <section className=" flex items-center justify-center pt-32 2xl:pt-[170px] 2xl:mt-48 px-4 md:px-0">
+      <div className="section-container text-center flex flex-col items-center">
         <div className="2xl:mb-3">
           <div className="w-[120px] h-[120px] rounded-xl overflow-hidden scale-[1.02]     hover:scale-[1.02] transition-transform duration-300">
             <img
