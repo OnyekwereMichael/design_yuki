@@ -56,7 +56,7 @@ const Pricing: React.FC = () => {
 
   return (
     <section className="bg-white pt-24 px-4 md:px-0">
-      <div className="section-container 2xl:max-w-5xl xl:max-w-4xl">
+      <div className="section-container 2xl:w-[989px] xl:w-[981px]">
         <div className="text-center mb-8">
           <h2 className="2xl:text-[40px] xl:text-[32px] md:text-[32px] font-medium text-[#2E2E2E] mb-1.5 tracking-tight leading-tight">
             Clear Pricing For <span className="italic font-serif font-normal">Shipping Real Products</span>
@@ -66,7 +66,7 @@ const Pricing: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-[#F8F8F8] 2xl:rounded-[45px] rounded-[32px] 2xl:p-[20px] xl:p-[18px] flex flex-col gap-4 ">
+        <div className="bg-[#F8F8F8] 2xl:rounded-[45px] rounded-[32px] 2xl:p-[20px] xl:p-[18px] flex flex-col gap-6 ">
           {tiers.map((tier, index) => (
             <div 
               key={index} 

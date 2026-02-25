@@ -3,7 +3,7 @@ import { icons, images } from "../../constants";
 export default function About() {
   return (
     <section className="min-h-screen bg-white  text-white  pt-24 ">
-      <div className="section-container  grid grid-cols-1 lg:grid-cols-3 gap-28 items-start">
+      <div className="section-container 2xl:w-[1428px] xl:w-[1240px]   grid grid-cols-1 lg:grid-cols-3 gap-28 items-start">
       
         <div className="space-y-8 col-span-2">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-b from-[#575757] to-[#262626] text-sm text-white h-[44px]">
@@ -11,7 +11,7 @@ export default function About() {
             <span className="font-medium 2xl:text-[15px] xl:text-[14px] tracking-wide">Behind ShipWithYuki</span>
           </div>
 
-          <div>
+          <div className="2xl:w-[823px] xl:w-[709px]">
           <p className="2xl:text-[28px] xl:text-[24px] font-[400] leading-relaxed text-[#262626]  ">
             I help early-stage founders turn messy ideas into products people actually want to use.
             ShipWithYuki is a small, founder-led design studio. I work hands-on from early thinking to

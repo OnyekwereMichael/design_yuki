@@ -43,7 +43,7 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="bg-white pt-24 px-4 md:px-0">
-      <div className="section-container">
+      <div className="section-container 2xl:w-[1234px] xl:w-[1200px] ">
         <h2 className="2xl:text-[40px] xl:text-[32px] md:text-[32px] font-medium text-[#2E2E2E] mb-8 tracking-tight leading-tight">
           <span className="italic font-serif font-normal">Frequently</span> Asked Questions
         </h2>

@@ -27,7 +27,7 @@ const Services: React.FC = () => {
 
   return (
     <section className='bg-white pt-20 px-4 md:px-0'>
-      <div className="section-container">
+      <div className="section-container 2xl:w-[1441px] xl:w-[1162px]">
         <h2 className="text-center xl:text-[32px] md:text-[40px] font-medium text-[#262626] mb-5 tracking-tight">
           Our Services
         </h2>

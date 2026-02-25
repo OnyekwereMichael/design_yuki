@@ -4,7 +4,7 @@ import { icons, images } from '../../constants';
 const Process = () => {
   return (
     <section className="bg-white pt-20 px-4 md:px-0 ">
-      <div className='section-container flex flex-col '>
+      <div className='section-container flex flex-col 2xl:w-[1428px] xl:w-[1240px] '>
       
       {/* Header Badge */}
       <div className="flex justify-center items-center ">

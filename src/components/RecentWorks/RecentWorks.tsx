@@ -5,7 +5,7 @@ import WorkCard from './WorkCard';
 const RecentWorks = () => {
   return (
     <section id="work" className="px-4 md:px-0 bg-gradient-to-b from-[#F8F8F8] to-[#22222222] pb-10 pt-14">
-      <div className='section-container'>
+      <div className='section-container 2xl:w-[1428px] xl:w-[1240px] '>
       <h2 className="text-[32px] font-medium text-[#262626]  tracking-tight">My Recent Works</h2>
       
       <div className="flex flex-col md:flex-row gap-8 lg:gap-8 mt-16">

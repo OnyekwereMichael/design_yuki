@@ -29,7 +29,7 @@ const testimonials = [
 const Testimonials: React.FC = () => {
   return (
     <section className="pt-3 px-4 md:px-0 bg-white">
-      <div className="section-container">
+      <div className="section-container 2xl:w-[1428.25px] xl:w-[1240px]">
         <div className="text-center 2xl:mb-8 xl:mb-6">
         <h2 className="xl:text-[32px] 2xl:text-[40px] font-medium text-[#262626] mb-2 tracking-tight leading-[1.1]">
           Don't Take My Word For It

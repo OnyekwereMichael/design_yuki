@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-white pt-24 pb-12 px-4 md:px-0">
-      <div className="section-container bg-[#F8F8F8] p-[24px] rounded-[45px]">
+    <footer className="bg-white pt-24 pb-12 px-4 md:px-0 ">
+      <div className="section-container bg-[#F8F8F8] p-[24px] rounded-[45px] max-w-[1314px] h-[543px]">
         <div className="flex flex-col lg:flex-row justify-between gap-16 lg:gap-32 items-start mb-8">
           
           <div className="flex-1 max-w-2xl">

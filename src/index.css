@@ -63,7 +63,9 @@
 }
 
 @utility section-container {
-  @apply mx-auto max-w-[1240px] 2xl:max-w-[1628px];
+  @apply mx-auto ;
+
+  /* max-w-[1240px] 2xl:max-w-[1628px] */
 }
 
 /* Base styles */
