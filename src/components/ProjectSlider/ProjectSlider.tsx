@@ -80,7 +80,7 @@ const ProjectSlider = () => {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='28' y2='28' stroke='%23000000' stroke-width='1' stroke-opacity='0.1'/%3E%3C/svg%3E")`,
-          backgroundSize: '8px 8px',
+          backgroundSize: '16px 16px',
         }}
       />
       <div 
