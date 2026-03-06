@@ -35,7 +35,7 @@ const Services: React.FC = () => {
         <section className="bg-[#F8F8F8] mx-auto mb-20 p-4 rounded-[45px]">
           <div className="">
       
-        <div className="flex justify-between gap-3">
+        <div className="flex justify-between gap-[16px]">
           {services.map((service, index) =>  (
             <div 
               key={index} 
