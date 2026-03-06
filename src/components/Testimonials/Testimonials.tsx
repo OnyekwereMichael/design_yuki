@@ -105,7 +105,7 @@ const Testimonials: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="2xl:text-[16px] leading-[1.65] text-[#3A3A3A] font-medium">
+                <div className="2xl:text-[16px] leading-[1.65] text-[#3A3A3A] font-normal">
                   {renderText(testimonial.text)}
                 </div>
               </div>
