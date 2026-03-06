@@ -89,7 +89,7 @@ const Process = () => {
           <img 
             src={images.underControl} 
             alt="Everything is under control" 
-            className="2xl:w-[412px] 2xl:h-[412px] xl:w-[374px] xl:h-[432px] object-contain"
+            className="2xl:w-[412px] 2xl:h-[490px] xl:w-[374px] xl:h-[432px] object-contain"
           />
         </div>
       </div>

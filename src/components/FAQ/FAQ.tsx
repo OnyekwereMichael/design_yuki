@@ -43,7 +43,7 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="bg-white pt-24 px-4 md:px-0">
-      <div className="section-container 2xl:w-[1234px] xl:w-[1200px] ">
+      <div className="section-container 2xl:w-[1428px] xl:w-[1200px] ">
         <h2 className="2xl:text-[40px] xl:text-[32px] md:text-[32px] font-medium text-[#2E2E2E] mb-8 tracking-tight leading-tight">
           <span className="italic font-serif font-normal">Frequently</span> Asked Questions
         </h2>
@@ -76,7 +76,7 @@ const FAQ: React.FC = () => {
                   </div>
                 </button>
                 <div 
-                  className={`px-6 transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
+                  className={`px-5 transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
                 >
                   <p className="text-[#FFFFFF] font-normal 2xl:text-[16px] xl:text-[15px] leading-relaxed">
                     {item.answer}

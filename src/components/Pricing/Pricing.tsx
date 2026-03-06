@@ -1,12 +1,14 @@
+import React from "react";
 import { icons } from "../../constants";
 
 const Pricing: React.FC = () => {
   const tiers = [
     {
+      badge: "Most Popular",
       title: "MVP Design Starter",
-      description: "For founders who need a clean, usable v1 to test an idea fast.",
+      description: "For founders who need a clean, usable v1 to test an idea \nfast.",
       price: "$999",
-      period: "/ One-Time",
+      period: " / One-Time",
       duration: "7-10 Days",
       buttonText: "Schedule a call",
       features: [
@@ -19,11 +21,12 @@ const Pricing: React.FC = () => {
       ]
     },
     {
+      badge: "Best Value",
       title: "MVP Design Standard",
-      highlight: "(Most Popular)",
-      description: "For teams building a serious MVP with room to grow.",
+      description: 
+      "For teams building a serious MVP with room to \ngrow.",
       price: "$1,499",
-      period: "/ One-Time Or Milestone-Based",
+      period: " / One-Time Or Milestone-Based",
       duration: "14-21 Days",
       buttonText: "Schedule a call",
       features: [
@@ -36,13 +39,13 @@ const Pricing: React.FC = () => {
       ]
     },
     {
+      badge: "Trusted By Teams",
       title: "Design Partner",
-      highlight: "(Retainer)",
-      description: "For startups that need consistent design support as they ship and iterate.",
+      description: "Best for teams that need continuous updates and ongoing \nsupport.",
       price: "$1,999",
-      period: "/ One-Time Or Milestone-Based",
+      period: " / One-Time Or Milestone-Based",
       duration: "Limited Slots",
-      buttonText: "Let's talk",
+      buttonText: "Schedule a call",
       features: [
         "Ongoing product & UI design",
         "Feature improvements and experiments",
@@ -55,75 +58,81 @@ const Pricing: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white pt-24 px-4 md:px-0">
-      <div className="section-container 2xl:w-[989px] xl:w-[981px]">
+    <section className="bg-white pt-24 px-4">
+      <div className="2xl:max-w-[1377px] mx-auto">
+        {/* Header Section */}
         <div className="text-center mb-8">
-          <h2 className="2xl:text-[40px] xl:text-[32px] md:text-[32px] font-medium text-[#2E2E2E] mb-1.5 tracking-tight leading-tight">
+          <h2 className="text-[40px] font-medium text-[#262626] mb-2 tracking-tight leading-tight">
             Clear Pricing For <span className="italic font-serif font-normal">Shipping Real Products</span>
           </h2>
-          <p className="2xl:text-[18px] xl:text-[16px] text-[#2E2E2E] font-normal max-w-2xl mx-auto">
+          <p className="text-[18px] text-[#525252] font-normal max-w-3xl mx-auto">
             Simple design scopes built to help founders move fast without guessing timelines, costs, or next steps.
           </p>
         </div>
 
-        <div className="bg-[#F8F8F8] 2xl:rounded-[45px] rounded-[32px] 2xl:p-[20px] xl:p-[18px] flex flex-col gap-6 ">
+        {/* Pricing Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-[#F8F8F8] 2xl:p-[24px] 2xl:rounded-[45px]">
           {tiers.map((tier, index) => (
             <div 
               key={index} 
-              className="bg-white 2xl:rounded-[38px] xl:rounded-[32px] rounded-[25px] 2xl:px-10 2xl:py-8  xl:px-10 xl:py-8 flex flex-col lg:flex-row gap-5 lg:gap-12 items-stretch 2xl:h-[315px] xl:h-[320px]"
-              
+              className="bg-white 2xl:rounded-[25px] 2xl:h-[638px] 2xl:w-[427px] 2xl:p-[24px] flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-300"
             >
-              {/* Left Side: Pricing Info */}
-              <div className="flex-1 flex flex-col w-full lg:w-auto">
-                <div className="mb-4">
-                  <h3 className="2xl:text-[21px] xl:text-[24px] font-medium text-[#262626] mb-1">
-                    {tier.title} {tier.highlight && <span className="italic font-serif 2xl:text-[21px] xl:text-[24px] font-medium text-[#262626]">{tier.highlight}</span>}
-                  </h3>
-                  <p className="text-[#262626] font-normal 2xl:text-[16px] xl:text-[15px] max-w-sm">
-                    {tier.description}
-                  </p>
-                </div>
+            {/* Badge */}
+<div className="mb-6">
+  <span className="bg-gradient-to-b from-[#575757] to-[#262626] text-[#FFFFFF] leading-[100%] 2xl:text-[13px] font-medium 2xl:p-[12px] 2xl:rounded-[25px] 2xl:h-[40px] inline-flex items-center justify-center">
+    {tier.badge}
+  </span>
+</div>
 
-                <div className="mb-4">
-                  <div className="flex items-baseline gap-1">
-                    <span className="2xl:text-[32px] xl:text-[30px] font-medium text-[#262626]">{tier.price}</span>
-                    <span className="text-[#262626] 2xl:text-[16px] xl:text-[15px] font-medium">{tier.period}</span>
-                  </div>
-                  <p className="text-[#262626] 2xl:text-[15px] xl:text-[14px] font-medium mt-1">
-                    {tier.duration}
-                  </p>
-                </div>
+              <div className="mb-5">
+                <h3 className="2xl:text-[21px] font-medium text-[#262626] mb-2 leading-[100%]">
+                  {tier.title}
+                </h3>
+                <p className="2xl:text-[16px] text-[#3A3A3A] leading-[150%] font-normal whitespace-pre-line">
+                  {tier.description}
+                </p>
+              </div>
 
-                <button className="w-full mt-auto h-[56px] rounded-full bg-linear-to-b from-[#4a4a4a] to-[#1a1a1a] text-white font-bold 2xl:text-[16px] xl:text-[15px] shadow-2xl transition-opacity">
-                  {tier.buttonText}
-                </button>
+              {/* Price Section */}
+              <div className="mb-4">
+                <div className="flex items-baseline gap-1">
+                  <span className="2xl:text-[32px] font-medium text-[#262626] leading-[100%]">{tier.price}</span>
+                  <span className="2xl:text-[16px] text-[#262626] font-medium">{tier.period}</span>
+                </div>
+                <p className="text-[15px] text-[#262626] font-medium mt-2.5 leading-[100%]">
+                  {tier.duration}
+                </p>
               </div>
 
               {/* Demarcation Line */}
-              <div className="hidden lg:block w-px bg-[#F0F0F0]"></div>
+              <div className="w-full h-px bg-[#F8F8F8] mb-6"></div>
 
-              {/* Right Side: Features List */}
-              <div className="flex-1 w-full lg:w-auto">
-                <ul className="grid grid-cols-1 gap-y-2">
-                  {tier.features.map((feature, fIndex) => (
-                    <li key={fIndex} className="flex items-center gap-3 py-1 border-b border-[#F0F0F0] last:border-0">
-                      <div className="w-6 h-6 rounded-full bg-[#46DC74] border-[1.5px] mb-1 border-[#46DC74] flex items-center justify-center shrink-0">
-                        <img src={icons.checkIcon} alt="check" />
-                      </div>
-                      <span className="text-[#606060] 2xl:text-[16px] xl:text-[15px] font-normal">
-                        {feature}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {/* Features List */}
+              <ul className="flex-1 space-y-4 mb-10">
+                {tier.features.map((feature, fIndex) => (
+                  <li key={fIndex} className="flex items-start gap-3">
+                    <div className="w-[24px] h-[24px] rounded-full bg-[#46DC74] border-[1.5px] border-[#46DC74] flex items-center justify-center shrink-0 mt-0.5">
+                     <img src={icons.checkIcon} alt=""/>
+                    </div>
+                    <span className="text-[#606060] 2xl:text-[16px] font-normal leading-tight pt-0.5">
+                      {feature}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Call to Action Button */}
+              <button className="w-full 2xl:h-[56px] 2xl:rounded-[40px] bg-gradient-to-b  py-[12px] px-[20.57px] from-[#575757] to-[#262626] border-[0.86px] border-[#616161] text-white font-bold 2xl:text-[16px] leading-[160%] transition-colors shadow-2xl shadow-[#14141480]]"> 
+                {tier.buttonText}
+              </button>
             </div>
           ))}
         </div>
 
-        <p className="text-center mt-5 text-[#2E2E2E] 2xl:text-[20px] xl:text-[18px] font-normal font-serif">
+        {/* Bottom Note */}
+        {/* <p className="text-center mt-12 text-[#525252] text-[18px] font-normal font-serif italic">
           Final Pricing Depends On Scope And Complexity. A Short Call Helps Align Expectations Before Starting.
-        </p>
+        </p> */}
       </div>
     </section>
   );

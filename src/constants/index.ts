@@ -19,6 +19,12 @@ import testimonialPicThree from '../assets/testimonial_three.jpg'
 import testimonialPicFour from '../assets/testimonial_four.jpg'
 import forward from '../assets/icons/forward.svg'
 import arrowRight02 from '../assets/icons/arrow-right-02.svg'
+import testimoial_Img from '../assets/testimonial_Img1.png'
+import testimonial_Img2 from '../assets/testimonial_Img2.png'
+import testimonial_Img3 from '../assets/testimonial_Img3.png'
+import linkedinIcon from '../assets/icons/linkedin-01.svg'
+import xIocn from '../assets/icons/new-twitter.svg'
+
 
 
 import arrowLeft from '../assets/icons/arrow-left.svg'
@@ -53,7 +59,9 @@ export const icons = {
     checkIcon,
     forward,
     arrowRight02,
-    appointment
+    appointment,
+    linkedinIcon,
+    xIocn 
   };
 
 export const images = {
@@ -75,6 +83,11 @@ export const images = {
   testimonialPicOne,
   testimonialPicTwo,
   testimonialPicThree,
-  testimonialPicFour
+  testimonialPicFour,
+  testimoial_Img,
+  testimonial_Img2,
+  testimonial_Img3,
 
 };
+
+                      

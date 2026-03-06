@@ -75,12 +75,17 @@ const ProjectSlider = () => {
   };
 
   return (
-    <section className=" bg-[#F8F8F8] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden mt-14 2xl:mt-14 ">
-
-      {/* Slider Container */}
+    <section className="relative bg-[#FFFFFF] rounded-tr-[25px] rounded-tl-[25px] overflow-hidden mt-14 2xl:mt-14 ">
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='28' y2='28' stroke='%23000000' stroke-width='1' stroke-opacity='0.1'/%3E%3C/svg%3E")`,
+          backgroundSize: '8px 8px',
+        }}
+      />
       <div 
         ref={sliderRef}
-        className="flex gap-6 overflow-x-hidden cursor-grab active:cursor-grabbing select-none px-8 pt-8"
+        className="relative z-10 flex gap-4 overflow-x-hidden cursor-grab active:cursor-grabbing select-none px-6 pt-6"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => {
           setIsPaused(false);
@@ -99,12 +104,12 @@ const ProjectSlider = () => {
             className="flex-shrink-0 w-[761px] group"
           >
             {/* Project Card */}
-            <div className="relative overflow-hidden rounded-tl-[32px] rounded-tr-[32px]  hover:shadow-xl  transition-shadow duration-300">
-              <div className=" overflow-hidden">
+            <div className="relative overflow-hidden rounded-tl-[32px] rounded-tr-[32px] border-[3px] border-[#EFEFEF]  hover:shadow-xl  transition-shadow duration-300">
+              <div className=" overflow-hidden ">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover  transition-transform duration-500"
+                  className="w-full h-full object-cover  transition-transform duration-500  "
                   draggable="false"
                 />
               </div>
