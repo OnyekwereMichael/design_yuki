@@ -8,7 +8,7 @@ const Pricing: React.FC = () => {
       title: "MVP Design Starter",
       description: "For founders who need a clean, usable v1 to test an idea \nfast.",
       price: "$999",
-      period: " / One-Time",
+      period: " One-Time",
       duration: "7-10 Days",
       buttonText: "Schedule a call",
       features: [
@@ -26,7 +26,7 @@ const Pricing: React.FC = () => {
       description: 
       "For teams building a serious MVP with room to \ngrow.",
       price: "$1,499",
-      period: " / One-Time Or Milestone-Based",
+      period: " One-Time Or Milestone-Based",
       duration: "14-21 Days",
       buttonText: "Schedule a call",
       features: [
@@ -43,7 +43,7 @@ const Pricing: React.FC = () => {
       title: "Design Partner",
       description: "Best for teams that need continuous updates and ongoing \nsupport.",
       price: "$1,999",
-      period: " / One-Time Or Milestone-Based",
+      period: "One-Time Or Milestone-Based",
       duration: "Limited Slots",
       buttonText: "Schedule a call",
       features: [
@@ -62,10 +62,10 @@ const Pricing: React.FC = () => {
       <div className="2xl:max-w-[1377px] mx-auto">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <h2 className="text-[40px] font-medium text-[#262626] mb-2 tracking-tight leading-tight">
-            Clear Pricing For <span className="italic font-serif font-normal">Shipping Real Products</span>
+          <h2 className="text-[40px] font-medium text-[#262626] mb-0.5 tracking-[0.01em] leading-tight">
+            Clear Pricing For <span className="italic font-serif font-normal tracking-[-0.05em]">Shipping Real Products</span>
           </h2>
-          <p className="text-[18px] text-[#525252] font-normal max-w-3xl mx-auto">
+          <p className="text-[18px] text-[#3A3A3A] font-normal max-w-3xl mx-auto tracking-[0.02em]">
             Simple design scopes built to help founders move fast without guessing timelines, costs, or next steps.
           </p>
         </div>
@@ -79,16 +79,16 @@ const Pricing: React.FC = () => {
             >
             {/* Badge */}
 <div className="mb-6">
-  <span className="bg-gradient-to-b from-[#575757] to-[#262626] text-[#FFFFFF] leading-[100%] 2xl:text-[13px] font-medium 2xl:p-[12px] 2xl:rounded-[25px] 2xl:h-[40px] inline-flex items-center justify-center">
+  <span className="bg-gradient-to-b from-[#575757] to-[#262626] text-[#FFFFFF] leading-[100%] 2xl:text-[14px] font-medium 2xl:p-[12px] 2xl:rounded-[25px] 2xl:h-[40px] inline-flex items-center tracking-[0.01em] justify-center">
     {tier.badge}
   </span>
 </div>
 
               <div className="mb-5">
-                <h3 className="2xl:text-[21px] font-medium text-[#262626] mb-2 leading-[100%]">
+                <h3 className="2xl:text-[21px] font-medium text-[#262626] mb-2 leading-[100%] tracking-[-0.02em]">
                   {tier.title}
                 </h3>
-                <p className="2xl:text-[16px] text-[#3A3A3A] leading-[150%] font-normal whitespace-pre-line">
+                <p className="2xl:text-[16px] text-[#3A3A3A] 2xl:tracking-[0.02em] 2xl:leading-[150%] font-normal whitespace-pre-line">
                   {tier.description}
                 </p>
               </div>
@@ -96,10 +96,13 @@ const Pricing: React.FC = () => {
               {/* Price Section */}
               <div className="mb-4">
                 <div className="flex items-baseline gap-1">
-                  <span className="2xl:text-[32px] font-medium text-[#262626] leading-[100%]">{tier.price}</span>
-                  <span className="2xl:text-[16px] text-[#262626] font-medium">{tier.period}</span>
+                  <span className="2xl:text-[32px] font-medium text-[#262626] leading-[100%] tracking-[0.01em]">{tier.price}</span>
+                    <span className="">
+                      / 
+                    </span>
+                  <span className="2xl:text-[16px] tracking-[-0.05em] text-[#262626] font-medium pr-2">{tier.period}</span>
                 </div>
-                <p className="text-[15px] text-[#262626] font-medium mt-2.5 leading-[100%]">
+                <p className="2xl:text-[15px] tracking-[0.02em] text-[#262626] font-medium mt-2.5 leading-[100%] mr-2">
                   {tier.duration}
                 </p>
               </div>
@@ -114,7 +117,7 @@ const Pricing: React.FC = () => {
                     <div className="w-[24px] h-[24px] rounded-full bg-[#46DC74] border-[1.5px] border-[#46DC74] flex items-center justify-center shrink-0 mt-0.5">
                      <img src={icons.checkIcon} alt=""/>
                     </div>
-                    <span className="text-[#606060] 2xl:text-[16px] font-normal leading-tight pt-0.5">
+                    <span className="text-[#606060] tracking-[0.02em] 2xl:text-[16px] font-normal leading-tight pt-0.5">
                       {feature}
                     </span>
                   </li>
@@ -122,7 +125,7 @@ const Pricing: React.FC = () => {
               </ul>
 
               {/* Call to Action Button */}
-              <button className="w-full 2xl:h-[56px] 2xl:rounded-[40px] bg-gradient-to-b  py-[12px] px-[20.57px] from-[#575757] to-[#262626] border-[0.86px] border-[#616161] text-white font-bold 2xl:text-[16px] leading-[160%] transition-colors shadow-2xl shadow-[#14141480]]"> 
+              <button className="w-full 2xl:h-[56px] 2xl:rounded-[40px] bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)] shadow-2xl shadow-black/40py-[12px] px-[20.57px]  border-[0.86px] border-[#616161] text-white font-bold 2xl:text-[16px] leading-[160%] transition-colors "> 
                 {tier.buttonText}
               </button>
             </div>

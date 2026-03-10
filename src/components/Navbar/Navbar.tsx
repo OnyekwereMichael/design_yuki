@@ -10,7 +10,7 @@ const Navbar = () => {
           href="/" 
           className="inline-flex items-center px-5 py-3 bg-gradient-to-b from-[#575757] to-[#262626] text-white text-[15px] font-bold rounded-full hover:bg-[#2a2a2a] transition-all duration-200 tracking-wide hover:-translate-y-0.5 h-[48px]"
         >
-        <p className="tracking-wide">ShipWithYuki</p>
+        <p className="tracking-wide ">ShipWithYuki</p>
         </a>
 
         <div className="flex items-center gap-3 relative">
@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
         </section>
         
-            <button className="text-[15px] font-[400]  text-[#262626]">5 spots open for January</button>
+            <button className="text-[15px] tracking-[0.02em] font-[400]  text-[#262626]">5 spots open for January</button>
           </div>
 
           {/* Menu Button */}
@@ -30,7 +30,7 @@ const Navbar = () => {
             aria-label="Menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <span className="text-[15px] text-[#262626] font-medium">Menu</span>
+            <span className="text-[15px] tracking-[0.02em] text-[#262626] font-medium">Menu</span>
             <span className={`flex items-center justify-center w-7 h-7 bg-gradient-to-b from-[#575757] to-[#262626] rounded-full flex-col gap-[3px] transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}>
               <span className="w-1 h-1 bg-white rounded-full"></span>
               <span className="w-1 h-1 bg-white rounded-full mt-[0.9px]"></span>

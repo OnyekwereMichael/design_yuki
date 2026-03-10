@@ -18,7 +18,7 @@ const ProjectSlider = () => {
     let scrollPos = slider.scrollLeft;
 
     const animate = () => {
-      scrollPos += 0.5; 
+      scrollPos += 1.5; 
       
     
       if (scrollPos >= slider.scrollWidth / 2) {

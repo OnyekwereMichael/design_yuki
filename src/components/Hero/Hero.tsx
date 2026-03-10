@@ -16,14 +16,14 @@ const Hero = () => {
         </div>
 
         {/* Headline */}
-        <h1 className=" 2xl:text-[56px] xl:text-[48px] font-medium leading-[1.2] text-[#262626] mb-2 tracking-tight">
+        <h1 className=" 2xl:text-[56px] xl:text-[48px] font-medium leading-[1.2] text-[#262626] mb-2 tracking-[0.01em]">
           From Messy Ideas To Products People
           <br />
           Can <span className="font-instrument-serif italic font-normal">Actually Use.</span>
         </h1>
 
 
-        <p className="2xl:text-[18px] text-[15px] font-[400] leading-relaxed text-[#262626] max-w-2xl mb-5">
+        <p className="2xl:text-[18px] text-[15px] font-[400] leading-relaxed text-[#3A3A3A] max-w-2xl mb-5 tracking-[0.02em]">
           I help early-stage founders turn rough concepts into clear, usable digital products.
           <br className="hidden sm:block" />
           From structure and flows to polished UI, every decision is made with real users in mind.

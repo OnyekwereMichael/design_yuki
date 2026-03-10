@@ -43,18 +43,19 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className='bg-white '>
-             <div className='text-center mb-8'>
-                   <h1 className='text-[#262626] 2xl:text-[40px] font-medium leading-[100%]'>Built with ambitious founders</h1>
-                   <p className='text-[#3A3A3A] 2xl:text-[18px] font-normal leading-[160%] mt-1.5'>Founders and teams we’ve designed and shipped with and what they say about the experience.</p>
+    <section className='bg-white pt-6'>
+             <div className='text-center mb-[40px]'>
+                   <h1 className='text-[#262626] 2xl:text-[40px] font-medium leading-[100%] tracking-[0.01em]'>Built with ambitious founders</h1>
+                   <p className='text-[#3A3A3A] 2xl:text-[18px] font-normal leading-[160%] mt-1.5 tracking-[0.02em]'>Founders and teams we’ve designed and shipped with and what they say about the experience.</p>
               </div>
-     <div className="relative py-10 px-4 bg-[#FCFCFC] overflow-hidden">
+
+     <div className="relative py-12 px-4 bg-[#FCFCFC] overflow-hidden ">
            
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='28' y2='28' stroke='%23000000' stroke-width='1' stroke-opacity='0.1'/%3E%3C/svg%3E")`,
-          backgroundSize: '8px 8px',
+          backgroundSize: '16px 16px',
         }}
       />
 
@@ -74,8 +75,8 @@ const Testimonials: React.FC = () => {
         >
           {testimonialsData.map((testimonial, index) => (
             <SwiperSlide key={index} className="h-auto flex">
-              <div className="bg-[#FFFFFF] border-[3px] border-[#EFEFEF] xl:rounded-[25px] p-[16px] h-full w-full flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-300">
-                <div className="flex justify-between items-start mb-6">
+              <div className="bg-[#FFFFFF] border-[3px] border-[#EFEFEF] 2xl:rounded-[25px] p-[16px] h-full w-full flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-300">
+                <div className="flex justify-between items-start mb-[12px]">
                   <div className="flex items-center gap-2">
                     <div className="w-[56px] h-[56px] rounded-[17.5px] overflow-hidden flex-shrink-0">
                       <img 
@@ -85,10 +86,10 @@ const Testimonials: React.FC = () => {
                       />
                     </div>
                     <div>
-                      <h4 className="2xl:text-[18px] font-medium text-[#262626] leading-[100%] mb-0.5">
+                      <h4 className="2xl:text-[18px] font-medium text-[#262626] leading-[100%] mb-0.5 tracking-[0.02em]">
                         {testimonial.name}
                       </h4>
-                      <p className="2xl:text-[15px] text-[#3A3A3A] font-normal leading-[160%]">
+                      <p className="2xl:text-[15px] text-[#3A3A3A] font-normal leading-[160%] tracking-[0.02em]">
                         {testimonial.role}
                       </p>
                     </div>
@@ -105,7 +106,7 @@ const Testimonials: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="2xl:text-[16px] leading-[1.65] text-[#3A3A3A] font-normal">
+                <div className="2xl:text-[16px] leading-[1.65] text-[#3A3A3A] font-normal tracking-[0.02em]">
                   {renderText(testimonial.text)}
                 </div>
               </div>
