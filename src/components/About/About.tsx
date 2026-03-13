@@ -2,7 +2,7 @@ import { icons, images } from "../../constants";
 
 export default function About() {
   return (
-    <section className="pb-24 bg-white  text-white  pt-24 ">
+    <section className=" bg-white  text-white  pt-24 ">
       <div className="section-container 2xl:w-[1428px] xl:w-[1240px]   grid grid-cols-1 lg:grid-cols-3 gap-28 items-start">
       
         <div className="space-y-8 col-span-2">

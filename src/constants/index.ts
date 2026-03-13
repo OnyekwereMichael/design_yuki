@@ -11,6 +11,7 @@ import project10 from '../assets/project10.png'
 import project11 from '../assets/project11.png'
 import project12 from '../assets/project12.png'
 import project13 from '../assets/project13.png'
+import project14 from '../assets/project14.png'
 import aboutImg from '../assets/about_img.png'
 import underControl from '../assets/underControl.png'
 import testimonialPicOne from '../assets/testimonial_one.jpg'
@@ -78,6 +79,7 @@ export const images = {
   project11,
   project12,
   project13,
+  project14,
   aboutImg,
   underControl,
   testimonialPicOne,

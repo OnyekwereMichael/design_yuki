@@ -42,25 +42,25 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white pt-24 px-4 md:px-0">
+    <section className="bg-white pt-28 px-4 md:px-0">
       <div className="section-container 2xl:w-[1428px] xl:w-[1200px] ">
         <h2 className="2xl:text-[40px] xl:text-[32px] md:text-[32px] font-medium text-[#2E2E2E] mb-8 tracking-tight leading-tight">
-          <span className="italic font-serif font-normal">Frequently</span> Asked Questions
+          <span className="italic font-serif font-normal tracking-[-0.05em]">Frequently</span> <span className='tracking-[0.01em]'>Asked Questions</span>
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-5 items-start">
           {/* Accordion Column */}
-          <div className="flex-1 bg-[#262626] rounded-[30px] p-[20px] flex flex-col gap-4 w-full">
+          <div className="flex-1 bg-[#262626] rounded-[30px] 2xl:p-[24px] xl:p-[20px] flex flex-col gap-4 w-full">
             {faqData.map((item, index) => (
               <div 
                 key={index}
-                className={`rounded-[20px] overflow-hidden transition-all duration-300 shadow-lg ${openIndex === index ? 'bg-[#373737]' : 'bg-[#373737] hover:bg-[#373737]'}`}
+                className={`rounded-[20px] overflow-hidden transition-all duration-300 shadow-xl ${openIndex === index ? 'bg-[#373737]' : 'bg-[#373737] hover:bg-[#373737]'}`}
               >
                 <button 
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full text-left p-4 flex justify-between items-center gap-4  group"
                 >
-                  <span className="text-white 2xl:text-[18px] xl:text-[17px] font-medium tracking-tight">
+                  <span className="text-white 2xl:text-[18px] xl:text-[17px] font-medium tracking-[0.02em]">
                     {item.question}
                   </span>
                   <div className="w-8 h-8 rounded-full bg-[#575757] flex items-center justify-center shrink-0 group-hover:bg-white/20 transition-colors">
@@ -78,7 +78,7 @@ const FAQ: React.FC = () => {
                 <div 
                   className={`px-5 transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
                 >
-                  <p className="text-[#FFFFFF] font-normal 2xl:text-[16px] xl:text-[15px] leading-relaxed">
+                  <p className="text-[#FFFFFF] font-normal 2xl:text-[16px] xl:text-[15px] leading-relaxed tracking-[0.02em]">
                     {item.answer}
                   </p>
                 </div>
@@ -98,11 +98,11 @@ const FAQ: React.FC = () => {
               </div>
             </div>
 
-            <h3 className="text-white 2xl:text-[32px] xl:text-[24px] font-medium leading-tight">
+            <h3 className="text-white 2xl:text-[32px] xl:text-[24px] font-medium leading-tight tracking-[0.01em]">
               Book A 15-Min Intro <br /> Call
             </h3>
 
-            <button className="w-full h-[56px] 2xl:rounded-[24px] xl:rounded-[20px] bg-[radial-gradient(ellipse_at_top,#575757,#373737)]  text-white/90 font-medium 2xl:text-[16px] xl:text-[15px] transition-colors -inner">
+            <button className="w-full h-[56px] 2xl:rounded-[24px] xl:rounded-[20px] bg-[radial-gradient(ellipse_at_top,#575757,#373737)]  text-white/90 font-medium 2xl:text-[16px] xl:text-[15px] transition-colors -inner tracking-[0.02em]">
               Book A Call
             </button>
 
@@ -112,8 +112,8 @@ const FAQ: React.FC = () => {
                   <img src={icons.forward} alt="arrow left" />
                  </div>
                  <div className="flex flex-col">
-                    <span className="text-white 2xl:text-[16px] xl:text-[15px] font-medium  tracking-wider">Prefer To Email?</span>
-                    <span className="text-white 2xl:text-[16px] xl:text-[15px] font-normal tracking-    ">shipwithyuki@gmail.com</span>
+                    <span className="text-white 2xl:text-[16px] xl:text-[15px] font-medium  tracking-[0.02em]">Prefer To Email?</span>
+                    <span className="text-white 2xl:text-[16px] xl:text-[15px] font-normal tracking-[0.02em]   ">shipwithyuki@gmail.com</span>
                  </div>
                </div>
                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-white/90 transition-colors">
