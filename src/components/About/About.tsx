@@ -27,7 +27,7 @@ export default function About() {
 
         {/* RIGHT CONTENT */}
         <div className="space-y-4 col-span-1">
-          <p className="2xl:text-[16px] xl:text-[15px] font-[400] text-[#3A3A3A] tracking-[0.02em]">
+          <p className="2xl:text-[16px] xl:text-[16px] font-regular text-[#3A3A3A] tracking-[0.02em]">
             Working closely with founders, not as a vendor, but as a design partner. Clear thinking,
             fast iterations, and work that respects both users and business goals.
           </p>
@@ -36,11 +36,11 @@ export default function About() {
             <img
               src={images.aboutImg}
               alt="Design workspace"
-              className="w-full object-cover grayscale"
+              className="w-full object-cover grayscale xl:w-[393px] xl:h-[339px]"
             />
           </div>
 
-          <p className="italic font-instrument-serif 2xl:text-[20px] xl:text-[17px] font-[400] text-[#3A3A3A]">Clear design, shipped fast.</p>
+          <p className="italic font-instrument-serif 2xl:text-[20px] xl:text-[17px] font-regular text-[#3A3A3A]">Clear design, shipped fast.</p>
         </div>
       </div>
     </section>

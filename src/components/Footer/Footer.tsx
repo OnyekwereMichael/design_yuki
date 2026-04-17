@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white pt-28 pb-12 px-4 md:px-0 ">
-      <div className="section-container bg-[#F8F8F8] p-[24px] rounded-[40px] max-w-[1428px] h-[543px]">
+      <div className="section-container bg-[#F8F8F8] p-[24px] rounded-[40px] 2xl:max-w-[1428px] xl:max-w-[1240px] h-[543px]">
         <div className="flex flex-col lg:flex-row justify-between gap-16 lg:gap-32 items-start mb-8">
           
           <div className="flex-1 max-w-2xl">
@@ -29,14 +29,14 @@ const Footer: React.FC = () => {
               <span className="text-white 2xl:text-[15px] xl:text-[14px] tracking-[0.02em] font-medium ">ShipWithYuki</span>
             </div>
 
-            <h2 className="text-[#262626] 2xl:text-[40px] xl:text-[40px] text-[36px] font-medium leading-[100%] tracking-[0.01em] mb-1.5 pt-1 ">
+            <h2 className="text-[#262626] 2xl:text-[40px] xl:text-[40px] text-[40px] font-medium leading-[1.25] tracking-[0.01em] mb-1.5 pt-1 ">
               A Quick Conversation To See If<br className="hidden xl:block" />  We're  The Right Fit
             </h2>
-            <p className="text-[#3A3A3A] leading-[150%] tracking-[0.02em] 2xl:text-[16px] xl:text-[16px] text-[15px] font-normal max-w-lg mb-6">
+            <p className="text-[#3A3A3A] leading-[1.5] tracking-[0.02em] 2xl:text-[16px] xl:text-[16px] text-[15px] font-normal max-w-lg mb-6">
               A quick 15 or 30-minutes intro call to understand your product, align on expectations, and decide next steps.
             </p>
 
-            <div className="flex flex-col gap-7">
+            <div className="flex flex-col 2xl:gap-7 xl:gap-8">
               {socialLinks.map((link, index) => (
                 <a 
                   key={index} 
@@ -50,12 +50,12 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Right Column: CTA Card */}
-          <div className="2xl:w-[391px] xl:w-[391px] xl:h-[345px] 2xl:h-[345px] w-full bg-[#262626] 2xl:rounded-[25px] rounded-[25px] 2xl:p-[12px] lg:p-[12px] flex flex-col gap-6 shadow-2xl">
+          <div className="2xl:w-[391px] xl:w-[391px] xl:h-[355px] 2xl:h-[345px] w-full bg-[#262626] 2xl:rounded-[25px] rounded-[25px] 2xl:p-[16px] xl:p-[16px] lg:p-[12px] flex flex-col gap-6 ">
             <h3 className="text-white 2xl:text-[24px] xl:text-[24px] font-medium tracking-[-0.01em]">
               Let's Talk About Your Product
             </h3>
 
-            <ul className="flex flex-col gap-5">
+            <ul className="flex flex-col 2xl:gap-5 xl:gap-4">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-[#46DC74] border-[1.25px] border-[#46DC74] flex items-center justify-center shrink-0 mt-0.5">
@@ -69,11 +69,11 @@ const Footer: React.FC = () => {
             </ul>
 
             <div className="flex flex-col gap-3 ">
-              <button className="w-full h-[56px] rounded-[15px] bg-[#373737]  text-white font-medium 2xl:text-[15px] xl:text-[15px] flex items-center justify-center gap-3 transition-colors border border-white/5 active:scale-[0.98]">
+              <button className="w-full h-[56px] rounded-[15px] bg-[#373737]  text-white font-medium 2xl:text-[15px] xl:text-[15px] flex items-center justify-center gap-3 transition-colors border-t-2 border-white/5 active:scale-[0.98] ">
                <img src={icons.appointment} alt="" />
                <p className='tracking-[0.02em] leading-[150%]'>15-Mins Meeting</p>
               </button>
-              <button className="w-full h-[56px] rounded-[15px] bg-[#373737]  text-white font-medium 2xl:text-[15px] xl:text-[15px] flex items-center justify-center gap-3 transition-colors border border-white/5 active:scale-[0.98]">
+              <button className="w-full h-[56px] rounded-[15px] bg-[#373737]  text-white font-medium 2xl:text-[15px] xl:text-[15px] flex items-center justify-center gap-3 transition-colors border-t-2 border-white/5  active:scale-[0.98] ">
                <img src={icons.appointment} alt="" />
                <p className='tracking-[0.02em] leading-[150%]'>30-Mins Meeting</p>
               </button>
@@ -87,11 +87,11 @@ const Footer: React.FC = () => {
             <p className="text-[#B8B8B8] 2xl:text-[14px] text-[14px] font-medium tracking-[0.01em]">
               © 2025 Ship With Yuki. All Rights Reserved.
             </p>
-            <p className="text-[#B8B8B8] 2xl:text-[13px] text-[12px] font-normal  tracking-[0.01em] leading-[150%]">
+            <p className="text-[#B8B8B8] 2xl:text-[13px] xl:text-[12px] font-normal  tracking-[0.01em] leading-[150%]">
               Product design for startups and early-stage teams. MVP design - UX/UI - Design systems
             </p>
           </div>
-          <a href="mailto:shipwithyuki@gmail.com" className="text-[#B8B8B8] 2xl:text-[13px] text-[13px] tracking-[-0.01em] leading-[100%] font-medium hover:opacity-70 transition-opacity">
+          <a href="mailto:shipwithyuki@gmail.com" className="text-[#B8B8B8] 2xl:text-[13px] xl:text-[13px] tracking-[-0.01em] leading-[100%] font-medium hover:opacity-70 transition-opacity">
             shipwithyuki@gmail.com
           </a>
         </div>

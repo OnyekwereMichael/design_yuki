@@ -59,36 +59,36 @@ const Pricing: React.FC = () => {
 
   return (
     <section className="bg-white pt-28 px-4">
-      <div className="2xl:max-w-[1377px] mx-auto">
+      <div className="2xl:max-w-[1377px] xl:max-w-[1240px] mx-auto">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <h2 className="text-[40px] font-medium text-[#262626] mb-0.5 tracking-[0.01em] leading-tight">
+          <h2 className="2xl:text-[40px] xl:text-[32px] font-medium text-[#262626] mb-0.5 xl:mb-1 tracking-[0.01em] leading-tight">
             Clear Pricing For <span className="italic font-serif font-normal tracking-[-0.05em]">Shipping Real Products</span>
           </h2>
-          <p className="text-[18px] text-[#3A3A3A] font-normal max-w-3xl mx-auto tracking-[0.02em]">
+          <p className="2xl:text-[18px] xl:text-[16px] text-[#3A3A3A] font-normal max-w-3xl mx-auto tracking-[0.02em]">
             Simple design scopes built to help founders move fast without guessing timelines, costs, or next steps.
           </p>
         </div>
 
         {/* Pricing Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-[#F8F8F8] 2xl:p-[24px] 2xl:rounded-[45px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-[#F8F8F8] p-[24px] rounded-[45px]">
           {tiers.map((tier, index) => (
             <div 
               key={index} 
-              className="bg-white 2xl:rounded-[25px] 2xl:h-[638px] 2xl:w-[427px] 2xl:p-[24px] flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-300"
+              className="bg-white rounded-[25px] h-[638px] 2xl:w-[427px] xl:w-[381px] p-[24px] flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition-all duration-300"
             >
             {/* Badge */}
 <div className="mb-6">
-  <span className="bg-gradient-to-b from-[#575757] to-[#262626] text-[#FFFFFF] leading-[100%] 2xl:text-[14px] font-medium 2xl:p-[12px] 2xl:rounded-[25px] 2xl:h-[40px] inline-flex items-center tracking-[0.01em] justify-center">
+  <span className="bg-gradient-to-b from-[#575757] to-[#262626] text-[#FFFFFF] leading-[100%] 2xl:text-[14px] xl:text-[13px] font-medium p-[12px] rounded-[25px] h-[40px] xl:h-[36px] inline-flex items-center tracking-[0.01em] justify-center">
     {tier.badge}
   </span>
 </div>
 
               <div className="mb-5">
-                <h3 className="2xl:text-[21px] font-medium text-[#262626] mb-2 leading-[100%] tracking-[-0.02em]">
+                <h3 className="text-[21px] font-medium text-[#262626] mb-2 leading-[1.0] tracking-[-0.02em]">
                   {tier.title}
                 </h3>
-                <p className="2xl:text-[16px] text-[#3A3A3A] 2xl:tracking-[0.02em] 2xl:leading-[150%] font-normal whitespace-pre-line">
+                <p className="text-[16px] text-[#3A3A3A] tracking-[0.02em] leading-[1.5] font-normal 2xl:whitespace-pre-line xl:max-w-[330px] 2xl:max-w-full">
                   {tier.description}
                 </p>
               </div>
@@ -96,13 +96,13 @@ const Pricing: React.FC = () => {
               {/* Price Section */}
               <div className="mb-4">
                 <div className="flex items-baseline gap-1">
-                  <span className="2xl:text-[32px] font-medium text-[#262626] leading-[100%] tracking-[0.01em]">{tier.price}</span>
+                  <span className="text-[32px] font-medium text-[#262626] leading-[100%] tracking-[0.01em]">{tier.price}</span>
                     <span className="">
                       / 
                     </span>
-                  <span className="2xl:text-[16px] tracking-[-0.05em] text-[#262626] font-medium pr-2">{tier.period}</span>
+                  <span className="2xl:text-[16px] xl:text-[15px] 2xl:tracking-[-0.05em] xl:tracking-[0.02em] text-[#262626] font-medium pr-2">{tier.period}</span>
                 </div>
-                <p className="2xl:text-[15px] tracking-[0.02em] text-[#262626] font-medium mt-2.5 leading-[100%] mr-2">
+                <p className="text-[15px] tracking-[0.02em] text-[#262626] font-medium 2xl:mt-2.5 xl:mt-3 leading-[100%] mr-2">
                   {tier.duration}
                 </p>
               </div>
@@ -117,7 +117,7 @@ const Pricing: React.FC = () => {
                     <div className="w-[24px] h-[24px] rounded-full bg-[#46DC74] border-[1.5px] border-[#46DC74] flex items-center justify-center shrink-0 mt-0.5">
                      <img src={icons.checkIcon} alt=""/>
                     </div>
-                    <span className="text-[#606060] tracking-[0.02em] 2xl:text-[16px] font-normal leading-tight pt-0.5">
+                    <span className="text-[#606060] tracking-[0.02em] 2xl:text-[16px] font-normal leading-[1.5] pt-0.5">
                       {feature}
                     </span>
                   </li>
@@ -125,7 +125,7 @@ const Pricing: React.FC = () => {
               </ul>
 
               {/* Call to Action Button */}
-              <button className="w-full 2xl:h-[56px] 2xl:rounded-[40px] bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)] shadow-2xl shadow-black/40py-[12px] px-[20.57px]  border-[0.86px] border-[#616161] text-white font-bold 2xl:text-[16px] leading-[160%] transition-colors "> 
+              <button className="w-full h-[56px] rounded-[40px] bg-[radial-gradient(ellipse_at_top,#4a4a4a,#1a1a1a)] shadow-2xl shadow-black/40py-[12px] px-[20.57px]  border-[0.86px] border-[#616161] text-white font-bold text-[16px] leading-[1.6] transition-colors"> 
                 {tier.buttonText}
               </button>
             </div>
@@ -133,9 +133,9 @@ const Pricing: React.FC = () => {
         </div>
 
         {/* Bottom Note */}
-        {/* <p className="text-center mt-12 text-[#525252] text-[18px] font-normal font-serif italic">
+        <p className="text-center mt-7 text-[#2E2E2E] text-[18px] font-normal font-serif  leading-[1.0] ">
           Final Pricing Depends On Scope And Complexity. A Short Call Helps Align Expectations Before Starting.
-        </p> */}
+        </p>
       </div>
     </section>
   );

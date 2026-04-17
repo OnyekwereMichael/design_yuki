@@ -19,7 +19,7 @@ const Process = () => {
       
       <section className='mt-5'>
      <div className="flex flex-col items-center">
-        <h2 className="2xl:text-[40px] xl:text-[32px] md:text-[48px] font-medium text-[#262626] text-center mb-12">
+        <h2 className="2xl:text-[40px] xl:text-[32px]  font-medium text-[#262626] text-center mb-12">
           From Idea To <span className="italic  font-serif font-normal">Usable Product</span>
         </h2>
 
@@ -29,7 +29,7 @@ const Process = () => {
             <div className="xl:w-[104px] xl:h-[104px] 2xl:w-[116px] 2xl:h-[116px]  bg-gradient-to-b from-[#575757] to-[#262626] rounded-full flex items-center justify-center mb-2">
               <img src={icons.phone} alt="Understand"  />
             </div>
-            <h3 className="2xl:text-[32px] leading-[150%] xl:text-[24px] font-normal text-[#262626]">Understand</h3>
+            <h3 className="2xl:text-[32px] leading-[150%] xl:text-[24px] font-normal text-[#262626] tracking-[-0.02em]leading-[160%]">Understand</h3>
             <p className="2xl:text-[18px] xl:text-[15px] leading-[150%] text-[#3A3A3A] font-normal tracking-[0.02em]">
               We start by understanding your idea, your users, and what actually matters for version one. No bloated features, just <br/>clarity.
             </p>
@@ -39,7 +39,7 @@ const Process = () => {
             <div className="xl:w-[104px] xl:h-[104px] 2xl:w-[116px] 2xl:h-[116px]  bg-gradient-to-b from-[#575757] to-[#262626] rounded-full flex items-center justify-center mb-2">
               <img src={icons.cursor} alt="Design" />
             </div>
-            <h3 className="2xl:text-[32px] leading-[150%] xl:text-[24px] font-normal text-[#262626]">Design</h3>
+            <h3 className="2xl:text-[32px] leading-[150%] xl:text-[24px] font-normal text-[#262626] tracking-[-0.02em]leading-[160%]">Design</h3>
             <p className="2xl:text-[18px] xl:text-[15px] leading-[150%] text-[#3A3A3A] font-normal tracking-[0.02em]">
               We design key flows and screens with usability in mind, iterating quickly and focusing on what actually matters for <br/>version one.
             </p>
@@ -50,7 +50,7 @@ const Process = () => {
             <div className="xl:w-[104px] xl:h-[104px] 2xl:w-[116px] 2xl:h-[116px]  bg-gradient-to-b from-[#575757] to-[#262626] rounded-full flex items-center justify-center mb-2">
               <img src={icons.rocket} alt="Ship" />
             </div>
-            <h3 className="2xl:text-[32px] leading-[150%] xl:text-[24px] font-normal text-[#262626]">Ship</h3>
+            <h3 className="2xl:text-[32px] leading-[150%] xl:text-[24px] font-normal text-[#262626] tracking-[-0.02em]leading-[160%]">Ship</h3>
             <p className="2xl:text-[18px] xl:text-[15px] leading-[150%] text-[#3A3A3A] font-normal tracking-[0.02em]">
               We prepare designs for handoff or build, support iteration, and help you move forward with clarity and <br/>confidence.
             </p>
@@ -76,8 +76,8 @@ const Process = () => {
               "Systems matter more than one-off visuals",
               "Design should feel obvious in hindsight"
             ].map((text, index) => (
-              <li key={index} className="flex items-center gap-4 2xl:text-[24px] 2xl:leading-[160%] xl:text-[18px] xl:leading-[160%] font-normal text-[#3A3A3A] tracking-[0.02em]">
-                <div className="w-1.5 h-[7px] bg-[#262626] shrink-0" />
+              <li key={index} className="flex items-center gap-4 2xl:text-[24px] 2xl:leading-[160%] xl:text-[22px] xl:leading-[160%] font-normal text-[#3A3A3A] tracking-[0.02em]">
+                <div className="w-1.5 2xl:h-[7px] xl:h-[6px] bg-[#262626] shrink-0" />
                 <span>{text}</span>
               </li>
             ))}

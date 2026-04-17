@@ -86,7 +86,7 @@ const ProjectSlider = () => {
       <div 
         ref={sliderRef}
         className="relative z-10 flex gap-4 overflow-x-hidden cursor-grab active:cursor-grabbing select-none px-6 pt-6"
-        onMouseEnter={() => setIsPaused(true)}
+        // onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => {
           setIsPaused(false);
           setIsDragging(false);
@@ -104,7 +104,7 @@ const ProjectSlider = () => {
             className="flex-shrink-0 w-[761px] group"
           >
             {/* Project Card */}
-            <div className="relative overflow-hidden rounded-tl-[32px] rounded-tr-[32px] border-t-[3px] border-x-[3px] border-[#EFEFEF]  hover:shadow-xl  transition-shadow duration-300">
+            <div className="relative overflow-hidden rounded-tl-[32px] rounded-tr-[32px] border-t-[3px] border-x-[3px] border-[#EFEFEF]   transition-shadow duration-300">
               <div className=" overflow-hidden ">
                 <img 
                   src={project.image} 

@@ -49,7 +49,6 @@ const FAQ: React.FC = () => {
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-5 items-start">
-          {/* Accordion Column */}
           <div className="flex-1 bg-[#262626] rounded-[30px] 2xl:p-[24px] xl:p-[20px] flex flex-col gap-4 w-full">
             {faqData.map((item, index) => (
               <div 
@@ -58,9 +57,9 @@ const FAQ: React.FC = () => {
               >
                 <button 
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full text-left p-4 flex justify-between items-center gap-4  group"
+                  className="w-full text-left 2xl:p-4 xl:p-[10px] flex justify-between items-center gap-4  group"
                 >
-                  <span className="text-white 2xl:text-[18px] xl:text-[17px] font-medium tracking-[0.02em]">
+                  <span className="text-white 2xl:text-[18px] xl:text-[17px] font-medium tracking-[0.02em] leading-[1.0]">
                     {item.question}
                   </span>
                   <div className="w-8 h-8 rounded-full bg-[#575757] flex items-center justify-center shrink-0 group-hover:bg-white/20 transition-colors">
@@ -76,9 +75,9 @@ const FAQ: React.FC = () => {
                   </div>
                 </button>
                 <div 
-                  className={`px-5 transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
+                  className={`2xl:px-4 xl:px-3 transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 2xl:pb-6 xl:pb-3 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
                 >
-                  <p className="text-[#FFFFFF] font-normal 2xl:text-[16px] xl:text-[15px] leading-relaxed tracking-[0.02em]">
+                  <p className="text-[#FFFFFF] font-normal 2xl:text-[16px] xl:text-[16px] leading-[1.5] tracking-[0.02em]">
                     {item.answer}
                   </p>
                 </div>
@@ -87,7 +86,7 @@ const FAQ: React.FC = () => {
           </div>
 
           {/* Call Card Column */}
-          <div className="2xl:w-[384px] xl:w-[346px] bg-[#262626] 2xl:rounded-[30px] xl:rounded-[28px]  p-7 flex flex-col gap-6">
+          <div className="2xl:w-[384px] xl:w-[346px] bg-[#262626] 2xl:rounded-[30px] xl:rounded-[28px]  2xl:p-7 xl:p-[24px] flex flex-col gap-3.5">
             <div className="w-[80px] h-[80px] rounded-full p-[2px] border border-[#FFFFFF] bg-[#FFFFFF] flex items-center justify-center">
               <div className="w-full h-full rounded-full overflow-hidden">
                 <img
@@ -102,7 +101,7 @@ const FAQ: React.FC = () => {
               Book A 15-Min Intro <br /> Call
             </h3>
 
-            <button className="w-full h-[56px] 2xl:rounded-[24px] xl:rounded-[20px] bg-[radial-gradient(ellipse_at_top,#575757,#373737)]  text-white/90 font-medium 2xl:text-[16px] xl:text-[15px] transition-colors -inner tracking-[0.02em]">
+            <button className="w-full 2xl:h-[56px] xl:h-[50px] 2xl:rounded-[24px] xl:rounded-[20px] bg-[radial-gradient(ellipse_at_top,#575757,#373737)]  text-white/90 font-medium 2xl:text-[16px] xl:text-[16px] transition-colors -inner tracking-[0.02em]">
               Book A Call
             </button>
 

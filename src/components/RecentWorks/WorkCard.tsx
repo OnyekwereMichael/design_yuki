@@ -41,9 +41,9 @@ const WorkCard: React.FC<WorkCardProps> = ({
       </div>
       
       {/* Text Info */}
-      <div className="flex flex-col gap-[8px] px-1">
+      <div className="flex flex-col 2xl:gap-[8px] xl:gap-[6px] px-1">
         <div className="flex items-center gap-3 group cursor-pointer">
-          <h3 className="text-[24px] xl:text-[28px] 2xl:text-[32px] font-normal text-[#262626] tracking-tight">{title}</h3>
+          <h3 className="text-[24px] xl:text-[29px] 2xl:text-[32px] font-normal text-[#262626] tracking-[-0.02em]">{title}</h3>
            <img src={icons.arrowRight} alt="arrow right" className="w-6 h-6 md:w-8 md:h-8" />
         </div>
         <p className="xl:text-[15px] leading-[150%] 2xl:text-[16px] text-[#3A3A3A] tracking-[0.02em] font-normal">{category}</p>

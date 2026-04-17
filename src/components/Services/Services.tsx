@@ -27,7 +27,7 @@ const Services: React.FC = () => {
 
   return (
     <section className='bg-white pt-28 px-4 md:px-0'>
-      <div className="section-container 2xl:w-[1441px] xl:w-[1162px]">
+      <div className="section-container 2xl:w-[1441px] xl:w-[1163px]">
         <h2 className="text-center xl:text-[32px] 2xl:text-[40px] font-medium text-[#262626] mb-5 tracking-[0.01em]">
           Our Services
         </h2>
@@ -46,10 +46,10 @@ const Services: React.FC = () => {
               </div>
               
               <div className="mt-auto space-y-1.5">
-                <h3 className="text-[15px] 2xl:text-[16px] font-medium text-[#262626] leading-tight tracking-[0.02em]">
+                <h3 className="text-[15px] 2xl:text-[16px] font-medium text-[#262626] leading-[1.0] tracking-[0.02em]">
                   {service.title}
                 </h3>
-                <p className="text-[#3A3A3A] xl:text-[15px] 2xl:text-[16px] leading-relaxed font-normal 2xl:leading-[150%]">
+                <p className="text-[#3A3A3A] xl:text-[15px] 2xl:text-[16px] leading-[1.6] font-normal 2xl:leading-[1.5]">
                   {service.description}
                 </p>
               </div>
